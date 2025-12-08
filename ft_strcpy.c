@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strxpy.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: azeqiri <azeqiri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 15:07:42 by azeqiri           #+#    #+#             */
-/*   Updated: 2025/12/08 15:13:13 by azeqiri          ###   ########.fr       */
+/*   Updated: 2025/12/08 15:25:42 by azeqiri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-char	*ft_strcpy(char *s1, char *s2)
+char	*ft_strcpy(char *s1, char *s2) /* the s1 string is the destination string where we will copy the data from the source s2 string */
 {
-	int	i = 0;
+	int	i = 0; /* we initialise an intiger i that will be used later to iterate through the strings*/
 
-	while (s2[i])
+	while (s2[i])/* we check will the source string is not null enter the loop*/
 	{
-		s1[i] = s2[i];
-		i++;
+		s1[i] = s2[i]; /* we copy from the s2 source to the s1 destination */
+		i++; /* increment the i*/
 	}
-	s1[i] = 0;
-	return (0);
+	s1[i] = 0;/* we set the character at index i as 0 to nul-terminate the destination s1 string if the copied smthng inside of it or if the s2 is empty*/
+	return (s1); /* return the new string*/
 }
 
 int	main(void)
