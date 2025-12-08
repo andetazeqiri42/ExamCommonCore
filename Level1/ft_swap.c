@@ -6,10 +6,12 @@
 /*   By: azeqiri <azeqiri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 15:38:19 by azeqiri           #+#    #+#             */
-/*   Updated: 2025/12/08 15:47:03 by azeqiri          ###   ########.fr       */
+/*   Updated: 2025/12/08 17:03:40 by azeqiri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*Write a function that swaps the contents of two integers the adresses of which
+are passed as parameters.*/
 #include <unistd.h>
 
 void	ft_swap(int *a, int *b)

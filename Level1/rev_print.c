@@ -1,43 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   rev_print.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: azeqiri <azeqiri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/08 15:31:06 by azeqiri           #+#    #+#             */
-/*   Updated: 2025/12/08 17:03:59 by azeqiri          ###   ########.fr       */
+/*   Created: 2025/12/08 16:56:12 by azeqiri           #+#    #+#             */
+/*   Updated: 2025/12/08 17:09:07 by azeqiri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Write a function that returns the length of a string.
+/*Write a program that takes a string, and displays the string in reverse
+followed by a newline.
 
-Your function must be declared as follows:
+If the number of parameters is not 1, the program displays a newline.*/
 
-int	ft_strlen(char *str);*/
 #include <unistd.h>
 
-int ft_strlen(char *str)
+int	main(int ac, char *av[])
 {
-	int i=0;
-
-	while (str[i])
+	if (ac == 2)
 	{
-		i++;
-	}
-	return (i);
-}
-int	main(void)
-{
-	char str[]="hello from 42";
-	int	len;
-
-	len = ft_strlen(str);
-	
-	while (len--)
-	{
-		write(1, &str[ft_strlen(str) - len - 1], 1);
+		int i = 0;
+		while (av[1][i])
+			i++;
+		while (i--)
+			write(1, &av[1][i], 1);
 	}
 	write(1, "\n", 1);
-	return (0);
 }
