@@ -6,7 +6,7 @@
 /*   By: azeqiri <azeqiri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 16:45:01 by azeqiri           #+#    #+#             */
-/*   Updated: 2025/12/06 16:46:23 by azeqiri          ###   ########.fr       */
+/*   Updated: 2025/12/08 15:14:07 by azeqiri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include <unistd.h>
 
-int main (int ac, char  av[]) /* declaration of arguments that our program would take. The ac is the argument count it tells us how many arguments were passed to our program when we run it.*/ 
+int main (int ac, char  av[])/* declaration of arguments that our program would take. The ac is the argument count it tells us how many arguments were passed to our program when we run it.*/ 
 {
 int i = 0; /*declaration of an integer i that would be used later for iterating through the characters of the string */
 
