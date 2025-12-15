@@ -6,7 +6,7 @@
 /*   By: azeqiri <azeqiri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 17:54:32 by azeqiri           #+#    #+#             */
-/*   Updated: 2025/12/08 17:55:45 by azeqiri          ###   ########.fr       */
+/*   Updated: 2025/12/10 15:53:09 by azeqiri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,15 @@ If the number of arguments is not 1, the program displays '\n'.*/
 #include <unistd.h>
 
 // turns lowercase into uppercase
-char to_upper(char c)
+char	to_upper(char c)
 {
-    if (c >= 'a' && c <= 'z')
-        return (c - 32);   // ASCII trick: 'a' → 'A'
-    return (c);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);   // ASCII trick: 'a' → 'A'
+	return (c);
 }
 
 // turns uppercase into lowercase
-char to_lower(char c)
+char	to_lower(char c)
 {
     if (c >= 'A' && c <= 'Z')
         return (c + 32);   // ASCII trick: 'A' → 'a'
