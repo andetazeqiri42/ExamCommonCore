@@ -65,17 +65,17 @@ void swap(int *a, int *b)
 
 t_list* sort_list(t_list* list, int (*cmp)(int, int))
 {
-	int flag =1;
+	int flag = 1;
 	t_list* cur;
 	while(flag)
 	{
 		flag=0;
-		for(cur= list;cur && cur->next; cur=cur->next)
+		for (cur = list;cur && cur->next; cur=cur->next)
 		{
 			if(!cmp(cur->data, cur->next->data))
 			{
 				swap(&cur->data, &cur->next->data);
-				flag=1;
+				flag = 1;
 			}
 		}
 	}

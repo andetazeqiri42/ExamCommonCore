@@ -6,13 +6,14 @@
 /*   By: azeqiri <azeqiri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 16:45:01 by azeqiri           #+#    #+#             */
-/*   Updated: 2025/12/08 15:14:07 by azeqiri          ###   ########.fr       */
+/*   Updated: 2025/12/23 09:14:49 by azeqiri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*1) Write a program that takes a string and displays its first word, followed by a newline.*/
 
 #include <unistd.h>
+
 
 int main (int ac, char  av[])/* declaration of arguments that our program would take. The ac is the argument count it tells us how many arguments were passed to our program when we run it.*/ 
 {

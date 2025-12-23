@@ -8,5 +8,3 @@ typedef struct      s_list
 	
 }                   t_list;
 #endif
-
- 
